@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ngji
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/otikhomi-tenant/my-app/devfile-sample-python-basic-ngji@sha256:6cd55a7694139bdd2480194bc3d7f9346e8e730a576df7180522348ba741266d
+        name: my-python
+        resources: {}
+status: {}
